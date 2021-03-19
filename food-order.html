@@ -1,0 +1,27 @@
+<script>
+    // IN: our ap asks the user for the desired quantity
+    // FACT: we know the price for each item
+    // OUT: total cost
+
+    // data
+    foodName          =    "Salad"   // String
+    foodPriceValue    =    15.00    // Number
+    foodPriceUnits    =    "MDL"   // String
+    delivery          =    50.00   // Number
+
+   // alert ( "We have " + foodName )
+    clietQuantity = prompt ( 
+        "MENU\n\n" + foodName + "\n\nHow many?"
+         )
+
+    totalCost = foodPriceValue * clietQuantity
+
+    acquittal = totalCost + delivery
+
+    alert ( 
+           "you've ordered " + clietQuantity +
+           "\nbill " + totalCost + foodPriceUnits +
+           "\nDelivery " + delivery + foodPriceUnits +
+           "\nTotally for acquittal " +  acquittal + foodPriceUnits
+            )
+</script>

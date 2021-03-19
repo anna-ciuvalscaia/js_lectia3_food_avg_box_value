@@ -1,0 +1,32 @@
+<script>
+    // display a square with color + size from prompt()
+color = prompt ("Enter color name or code")
+size  = prompt ("Enter size in pixels")
+
+// border
+sizeBorder = prompt ( "Enter width in pixels or border")
+colorBorder = prompt ("Enter color name or border" )
+
+
+// !!! String
+// "..."
+// '...'
+// `...`
+
+// `+ color +`  sau ${color}
+
+document.write (
+  `<div style="
+background: ${color}; 
+width: ${size}px;
+height: ${size}px;
+border: ${sizeBorder}px solid ${colorBorder};
+"
+>
+BOX width = ${size} px <br>
+BORDER size = ${sizeBorder} px
+</div>`  
+)
+
+</script>
+
